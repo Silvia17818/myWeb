@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PositiviBot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>How are you feeling after all this information?</h1>
+  <div class="mood-buttons">
+    <button onclick="showMessage('happy')">😊</button>
+    <button onclick="showMessage('sad')">😢</button>
+    <button onclick="showMessage('stressed')">😰</button>
+    <button onclick="showMessage('bored')">😐</button>
+    <button onclick="showMessage('angry')">😠</button>
+  </div>
+
+  <div class="response" id="responseBox">
+    Click an emoji to get a boost! 💫
+  </div>
+
+  <script>
+    const messages = {
+      happy: [
+        "Keep shining! ✨ The world needs your smile.",
+        "Happiness is contagious—spread it around!",
+        "You’re on a roll! 🎉 Celebrate the little wins!"
+      ],
+      sad: [
+        "It’s okay to feel sad. You’re not alone. 💙",
+        "Sending a virtual hug 🤗 — you matter.",
+        "Even the darkest nights will pass. 🌤️"
+      ],
+      stressed: [
+        "Take a deep breath. Inhale... Exhale... 🌬️",
+        "You've got this. One step at a time. 🧘",
+        "Remember to rest—your mind is powerful!"
+      ],
+      bored: [
+        "Try dancing like nobody’s watching. 💃🕺",
+        "How about learning a random fun fact? 🧠",
+        "Maybe it’s time to start a mini adventure?"
+      ],
+      angry: [
+        "Pause. Breathe. You're in control. 💪",
+        "Try screaming into a pillow. Then laugh. 😤→😂",
+        "Anger is just passion in disguise. Channel it!"
+      ]
+    };
+
+    function showMessage(mood) {
+      const moodArray = messages[mood];
+      const randomMessage = moodArray[Math.floor(Math.random() * moodArray.length)];
+      document.getElementById('responseBox').innerText = randomMessage;
+    }
+  </script>
+  <div>
+    <a href="../main page/mainPage.html"><p><strong>Go to home page</strong><br></a>
+  </div>
+  
+</body>
+</html>
