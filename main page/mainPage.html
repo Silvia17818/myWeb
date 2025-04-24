@@ -2,55 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>main page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How The World Works</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Presenting the book:</h1>
-  <img src="../How the world works.png">
-  <div>
-    <ol>
-        <li>
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-              </ul>
-        </li>
-        <li>
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-              </ul>
-        </li>
-        <li>
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-              </ul>
-        </li>
-    </ol>
-  </div>
+  <div class="container">
+    <div id="top"></div>
+    <h2>Presenting the book:</h2>
+    <img src="../How the world works.png" alt="How the World Works book cover" class="book-image">
 
-    <p>
-        This short video will teach you about the importance of financial education of youth and kids
-    </p>
-    <iframe width="420" height="315"
-        src="https://www.youtube.com/watch?v=wKl_kZ7Wef0">
-    </iframe>
-    <p>
-        Where We Stand Today: Financial Literacy in U.S. Schools
-    </p>
-    
-    <p>
-        Know more about the author: Link to the Resume
-    </p>
-    <a href="../game/game.html">How are you feeling after all this information?</a>
-    <footer style="text-align: center; padding: 20px;">
-        <a href="../resume.html">View My Resume</a>
-    </footer>
-    
+    <div class="content">
+      <h3>What’s inside:</h3>
+      <ol>
+        <li>
+          <strong>Introduction: Why Money Matters Early On</strong>
+          <ul>
+            <li>The importance of financial literacy from childhood</li>
+            <li>Your role as a parent or educator</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chapter 1: What is Money, Really?</strong>
+          <ul>
+            <li>A simple explanation of money and its purpose</li>
+            <li>Needs vs. wants: the foundation of good choices</li>
+            <li>How people earn money (jobs, businesses, etc.)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chapter 2: Save, Spend, Share</strong>
+          <ul>
+            <li>The 3 basic money buckets every kid should know</li>
+            <li>Simple budgeting using jars or envelopes</li>
+            <li>How to track where money goes</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chapter 3: Smart Spending</strong>
+          <ul>
+            <li>Learning to wait (delayed gratification)</li>
+            <li>Making good choices: quality vs. quantity</li>
+            <li>Avoiding impulse buys</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chapter 4: How to Grow Your Money</strong>
+          <ul>
+            <li>What is saving vs. investing (super simple!)</li>
+            <li>The magic of compound interest</li>
+            <li>Kid-friendly ways to grow money (e.g. chores, lemonade stand)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chapter 5: Giving Back</strong>
+          <ul>
+            <li>Why generosity matters</li>
+            <li>How kids can give time, money, or effort</li>
+            <li>Making giving a habit</li>
+          </ul>
+        </li>
+        <li>
+            <strong>Conclusion: Habits for a Lifetime</strong>
+            <ul>
+              <li>How to build simple financial routines</li>
+              <li>Encouraging curiosity and consistency</li>
+              <li>Being a financial role model</li>
+            </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="content">
+        <p>This short video will teach you about the importance of financial education of youth and kids</p>
+
+        <iframe 
+          class="youtube-video"
+          src="https://www.youtube.com/watch?v=wKl_kZ7Wef0" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+
+        <p>Where We Stand Today: Financial Literacy in U.S. Schools</p>
+
+        <iframe 
+            class="tableau-dashboard"
+            src="https://public.tableau.com/views/FinancialEducationSchoolLevelData/Dashboard1?:embed=y&:display_count=yes"
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+
+        <a href="../game/game.html">How are you feeling after all this information?</a>
+        <footer>
+        <p>Know more about the author: <a href="../resume.html">View My Resume</a></p>
+        </footer>
+
+        <a href="#top" class="go-top">Go to the top</a>
+    </div>
+  </div>
 </body>
 </html>
